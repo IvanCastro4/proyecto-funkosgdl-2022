@@ -1,11 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;1,300&family=Ubuntu:wght@400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*barra de ofertas*/
+.anuncio-superior{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+}
+/*clases header y banner*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+
+}
+nav ul li{
+    text-decoration: none;
+}
+nav li a:hover{
+    color: rgb(19, 151, 72);
+}
+.menu-principal{
+    display: flex;
+flex-wrap: wrap;
+width: 100vw;  
+grid-area: header;  
+}
+nav ul a{
+    color:rgb(44, 44, 208);
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px;
+    display: block;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+}
+.encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    list-style: none;
+    background-color: rgba(80, 168, 200, 0.601);
+    height: auto;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.logo-inicio{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 header{
     background-color: aqua;
-    grid-area: header;
+    
 }
 main{
     background-color: bisque;
@@ -26,7 +91,7 @@ footer{
     height: 100vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    grid-template-areas:
+    grid-template-areas:  
         "header header header header"
         "header header header header"
         "main main main main"
@@ -76,4 +141,46 @@ background-color:lightgray ;
 }
 .titulo{
     display: flex;
+}
+/*clases para footer*/
+.pie-de-pagina{
+    background-color: rgba(72, 111, 174, 0.841);
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+}
+.redes{
+    font-weight: 700;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+.redes-sociales ul{
+    justify-content: space-evenly; 
+    display: flex;
+    list-style: none;  
+}
+.redes-sociales h2{
+    margin-bottom: 10px;
+}
+.datos h2{
+    display: flex;
+    font-size: 20px;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+.datos ul li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+
 }
