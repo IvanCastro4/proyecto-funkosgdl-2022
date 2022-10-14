@@ -306,7 +306,7 @@ grid-area: noticia1;
     font-size: 15px;
 
 }
-
+/*cambios para pantalla tablet*/
 @media (max-width: 768px){
     .grid-container-header{
         width: 100vw;
@@ -387,6 +387,123 @@ grid-area: noticia1;
     }
     .grid-container-aside{
         background-color: rgb(21, 165, 165);
+        width: 100vw;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 25% repeat(2, 1fr);
+        /*justify-content: center;
+        align-items: center;
+        place-content: center center;*/
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "titulo titulo   "
+        "noticia1 noticia2   "
+        "noticia3 .   "
+         ;
+    }
+    .notaimg{
+    
+        width: 150px;
+        height: 120px;
+        
+    }
+   
+}
+/*cambios para pantalla mobile*/
+@media (max-width: 576px){
+    .grid-container-header{
+        width: 100vw;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20px 50px 100px;
+        justify-items: center;
+        align-items: stretch;
+        grid-template-areas:
+        "anuncio anuncio"
+        "lista lista"
+        "banner banner"
+    ;
+    }
+    .logo{
+        width: 100px;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    
+    nav ul a{
+        color:rgb(44, 44, 208);
+        font-size: 10px;
+        text-decoration: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 20px;
+        display: block;
+    }
+    .banner img{
+        height: 100px;
+        width: 100vw;
+    }
+    .grid-container-main{
+        background-color: rgba(62, 174, 208, 0.756);
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows:  100px repeat(3, 1fr) 15%;
+        /*justify-content: center;
+        align-items: center;
+        place-content: center center;*/
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+    
+        "titulo titulo  "
+        "caja1 caja2   "
+        "caja4  caja3" 
+        "caja5 caja6"
+        ". .   "
+        ;
+        gap: 5px;
+    }
+    .titulo{
+        font-family: 'Ubuntu', sans-serif;
+        width: 100vw;
+        height: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        color: rgb(67, 14, 74);
+        grid-area: titulo  ;
+    }
+    .pie-de-pagina{
+        background-color: rgba(191, 119, 179, 0.841);
+        text-decoration: none;
+        list-style: none;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Source Sans Pro', sans-serif;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        /*font-family: 'Source Sans Pro', sans-serif;*/
+    }
+    .grid-container-aside{
+        background-color: rgb(64, 131, 131);
         width: 100vw;
         height: 70vh;
         display: grid;
