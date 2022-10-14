@@ -96,7 +96,7 @@ nav ul a{
 }
 .titulo{
     font-family: 'Ubuntu', sans-serif;
-   /* width: 100vw;*/
+    width: 100vw;
     height: 100%;
     text-align: center;
     margin-top: 20px;
@@ -104,6 +104,7 @@ nav ul a{
     font-size: 50px;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -135,28 +136,35 @@ nav ul a{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
+
 .box1{
+    
 background-color: rgba(0, 255, 255, 0.484);
 grid-area: caja1
 
 }
 .box2{
+    
 background-color: rgba(255, 0, 0, 0.445);
 grid-area: caja2;
 }
 .box3{
+    
 background-color: rgba(0, 0, 255, 0.359);
 grid-area: caja3;
 }
 .box4{
+    
 background-color: rgba(0, 128, 0, 0.336);
 grid-area: caja4;
 }
 .box5{
+    
 background-color: rgba(238, 130, 238, 0.337);
 grid-area: caja5;
 }
 .box6{
+    
 background-color: rgba(255, 255, 0, 0.327);
 grid-area: caja6;
 }
@@ -178,21 +186,16 @@ background-color: rgba(128, 128, 128, 0.384);
 
     padding: 2px 16px;
 }
-aside{
-    background-color: lightblue;
-    width: 100vw;
-    grid-area: aside;
 
-}
 
 .grid-container-header{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 30px 80px 250px;
     justify-items: center;
-    align-items: center;
+    align-items: stretch;
     grid-template-areas:
     "anuncio anuncio"
     "lista lista"
@@ -202,25 +205,70 @@ aside{
 
 /*clases para el main*/
 .grid-container-main{
-    background-color: blanchedalmond;
+    background-color: rgb(213, 210, 205);
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 15% 100px repeat(2, 1fr);
     /*justify-content: center;
     align-items: center;
     place-content: center center;*/
     justify-items: center;
     align-items: center;
     grid-template-areas:
+    ". . . . . . "
     "titulo titulo titulo titulo titulo titulo  "
     "caja1 caja2 caja3 caja4 caja5 caja6  "
     ". . . . . . "
-    ". . . . . . "
      ;
 }
-
+/*clases para el aside*/
+.noticias{
+    background-color: lightcyan;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.notaimg{
+    
+    width: 200px;
+    height: 200px;
+    
+}
+.nota1{
+    text-align: center;
+grid-area: noticia1;
+}
+.nota2{
+    text-align: center;
+    grid-area: noticia2;
+}
+.nota3{
+    text-align: center;
+    grid-area: noticia3;
+}
+.grid-container-aside{
+    background-color: lightcyan;
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25% 65% 10%;
+    /*justify-content: center;
+    align-items: center;
+    place-content: center center;*/
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "titulo titulo titulo  "
+    "noticia1 noticia2 noticia3  "
+    ". . .  "
+     ;
+}
 /*clases para footer*/
 .pie-de-pagina{
     background-color: rgba(72, 111, 174, 0.841);
