@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;1,300&family=Ubuntu:wght@400;500&display=swap');
+/**elección de fuentes
+font-family: 'Source Sans Pro', sans-serif; ítulos
+font-family: 'Ubuntu', sans-serif; texto general
+*/
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +21,7 @@
     color: aliceblue;
     font-family: 'Ubuntu', sans-serif;
     grid-area: anuncio;
-   
+
 }
 /*clases header y banner*/
 nav ul {
@@ -187,7 +192,15 @@ background-color: rgba(128, 128, 128, 0.384);
     width: 100px;
     height: 100px;
     
+
+    transition: transform .2s; 
 }
+
+.card-imagen:hover {
+    transform: scale(1.7);
+
+}
+
 .contenido{
     display: flex;
     flex-direction: column;
@@ -197,12 +210,12 @@ background-color: rgba(128, 128, 128, 0.384);
 }
 /*grillas para el main*/
 .grid-container-main{
-    background-color: rgb(213, 210, 205);
+    background-color: rgba(97, 156, 158, 0.608);
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 15% 100px repeat(2, 1fr);
+    grid-template-rows: 50px 150px 450px 50px;
     /*justify-content: center;
     align-items: center;
     place-content: center center;*/
@@ -249,16 +262,17 @@ grid-area: noticia1;
 .grid-container-aside{
     background-color: lightcyan;
     width: 100vw;
-    height: 70vh;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25% 65% 10%;
+    grid-template-rows: 18px 70px 400px 30px;
     /*justify-content: center;
     align-items: center;
     place-content: center center;*/
     justify-items: center;
     align-items: center;
     grid-template-areas:
+    ". . .  "
     "titulo titulo titulo  "
     "noticia1 noticia2 noticia3  "
     ". . .  "
@@ -335,7 +349,7 @@ grid-area: noticia1;
         width: 100vw;
     }
     .grid-container-main{
-        background-color: rgb(229, 195, 140);
+        background-color: rgb(129, 183, 248);
         width: 100vw;
         height: 100vh;
         display: grid;
@@ -455,7 +469,7 @@ grid-area: noticia1;
         height: 100vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows:  100px repeat(3, 1fr) 15%;
+        grid-template-rows:  50px repeat(3, 1fr) 15%;
         /*justify-content: center;
         align-items: center;
         place-content: center center;*/
@@ -478,7 +492,7 @@ grid-area: noticia1;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: 30px;
+        font-size: 23px;
     
         display: flex;
         flex-wrap: wrap;
@@ -508,7 +522,7 @@ grid-area: noticia1;
         height: 70vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 25% repeat(2, 1fr);
+        grid-template-rows: 10% repeat(2, 1fr);
         /*justify-content: center;
         align-items: center;
         place-content: center center;*/
@@ -517,8 +531,8 @@ grid-area: noticia1;
         grid-template-areas:
         "titulo titulo   "
         "noticia1 noticia2   "
-        "noticia3 .   "
-         ;
+        "noticia3 noticia3   "
+        ;
     }
     .notaimg{
     
@@ -526,5 +540,39 @@ grid-area: noticia1;
         height: 120px;
         
     }
-   
+
 }
+.img-que-es{
+    width: 25%;/*en chrome me lo tira para abajo si le doy más, en firefox me deja un espacio ligero*/
+    height: 250px;  
+    /*position: relative;*/
+}
+.definicion{
+height: 100vh;
+background-color: lightskyblue;
+
+}
+.definicion h2{
+    font-size: 50px;
+    color: blue;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+ 
+    padding: 15px;
+}
+.definicion p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 40px;
+    color: rgba(3, 28, 42, 0.83);
+    width: 100%;
+    height: 100%;
+}
+
+.funko-fotos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
