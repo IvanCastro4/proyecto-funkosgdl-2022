@@ -1,75 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkosGdl</title>
-    <link rel="shortcut icon"
-    href="../assets/images/corona.png"
-    tyassetspe="image/x-icon"/>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <!--llamado a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <!--barra de anuncios-->
-    <p id="arriba" class="anuncio-superior">
-    Envíos gratis a todo México a partir de $999 mxn
-    </p>
-    <header class="encabezado"> 
-    <div>
-        <!--logo y nombre con hipervínculo-->
-        <a href="../index.html" class="logo"><img src="../assets/images/iconcorona.png"alt="" class="imagen-menu"/>
-        <h2 class="nombre-pag">FunkosGdl</h2>
-        </a>
-    </div>
-    <nav>
-        <!--barra de navegación-->
-        <ul>
-        <li><a href="../index.html">INICIO</a></li>
-        <li><a href="./que_es_funko.html">¿QUÉ SON??</a></li>
-        <li><a href="./productos.html">PRODUCTOS</a></li>
-        <li><a href="./nosotros.html">CONÓCENOS</a></li>
-        <li><a href="./formulario.html">CUENTA</a></li>
-        </ul>
-    </nav>
-    </header>
-    <main>
-        <h2 class="titulo-cuenta">tu cuenta</h2>
-        <div class="cuenta">
-            <form action="" method="post" enctype="">
-                <fieldset>
-                    <legend>¿Ya tienes cuenta? Ingresa tus datos</legend>
-                    <label for="alta">
-                        <span> ¿Cómo te llamas?</span>
-                        <input class="escritura" type="text" id="alta" placeholder="escribe tu nombre" />
-                    </label>
-                    <label for="email">
-                        <span> Correo electrónico</span>
-                        <input class="escritura" type="email" id="email" placeholder="ingresa tu correo electronico" />
-                    </label>
-                    <label for="contraseña">
-                        <span> Contraseña</span>
-                        <input class="escritura" type="password" id="contraseña" placeholder="ingresa tu contraseña" />
-                    </label>
-                </fieldset>
-                <fieldset class="aceptar">
-                    <legend>
-                        Acepta los términos y condiciones
-                    </legend>
-                    <label for="acepto">ACEPTO</label>
-                    <input type="checkbox" id="acepto" name="acepto" value="1">
-                </fieldset>
-                <div>
-                    <input type="submit" id="" value="ingresar" />
-                    <input type="submit" id="" value="olvidé mi contraseña" />
-                </div>
-                <div>
-                    <p>¿Eres nuevo? unete a nuestro club AQUI</p>
-                </div>
+<header >
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../clase-2/assets/images/corona.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                FunkosGdl
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">¿Qué son?</a>
+              </li>
+              <!-- menu desplegable
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Conócenos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
+          </div>
         </div>
-    </main>
-    <footer class="pie-de-pagina"><!--pie de página-->
+      </nav>
+</header>
+<main >
+    <form class="formulario">
+        <fieldset >
+            <legend>¿Ya tienes cuenta? Ingresa tus datos</legend>
+        <div class="row mb-3">
+          <label for="input-nombre" class="col-sm-2 col-form-label">Escribe tu nombre</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="input-nombre" placeholder="pon tu nombre aquí">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Escribe tu e-mail">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Escribe tu contraseña">
+            </div>
+          </div>
+          </fieldset>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">¿Cómo te identificas?</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Hombre
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Mujer
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+              <label class="form-check-label" for="gridRadios3">
+                Otro
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Acepto términos y condiciones
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mover">Ingresar</button>
+      </form>
+</main>
+<!--pie de página-->
+   <footer class="pie-de-pagina">
         <section class="redes-sociales">
             <h2>Suiguenos en nuestras redes</h2>
         <ul>
@@ -87,5 +133,7 @@
             </ul>
         </section>
         </footer>
+<!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

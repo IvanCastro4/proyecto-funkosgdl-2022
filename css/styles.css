@@ -693,3 +693,34 @@ background-color: lightskyblue;
     width: fit-content;
     height: fit-content;
 }
+/*clases bootstrap*/
+.navBar li{
+    list-style: none;
+}
+.navBar li a{
+    color: rgb(11, 82, 225);
+    text-decoration: none;
+}
+main{
+    background-color: rgba(97, 156, 158, 0.608);
+    color: blue;
+    height: 100vh;
+
+}
+main fieldset{
+    width: 80%;
+    padding: 25px;
+}
+.mover{
+    margin-left: 45vw;
+
+}
+nav{
+background-color: rgba(80, 168, 200, 0.601);
+
+}
+.nav-item{
+color: blue;
+font-size: 20px;
+
+}
