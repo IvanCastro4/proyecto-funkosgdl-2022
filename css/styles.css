@@ -449,9 +449,9 @@ grid-area: noticia1;
         justify-items: center;
         align-items: stretch;
         grid-template-areas:
-        "anuncio anuncio"
-        "lista lista"
-        "banner banner"
+        "anuncio"
+        "lista"
+        "banner"
     ;
     }
     .anuncio-superior{
@@ -492,9 +492,9 @@ grid-area: noticia1;
     .grid-container-main{
         background-color: rgba(62, 174, 208, 0.756);
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 100%;
         grid-template-rows:  50px repeat(3, 1fr) 15%;
         /*justify-content: center;
         align-items: center;
@@ -503,11 +503,14 @@ grid-area: noticia1;
         align-items: center;
         grid-template-areas:
     
-        "titulo titulo  "
-        "caja1 caja2   "
-        "caja4  caja3" 
-        "caja5 caja6"
-        ". .   "
+        "titulo "
+        "caja1" 
+        "caja2   "
+        "caja4"
+        "caja3" 
+        "caja5" 
+        "caja6"
+        ".   "
         ;
         gap: 5px;
     }
@@ -545,9 +548,9 @@ grid-area: noticia1;
     .grid-container-aside{
         background-color: rgb(64, 131, 131);
         width: 100vw;
-        height: 70vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 100%;
         grid-template-rows: 10% repeat(2, 1fr);
         /*justify-content: center;
         align-items: center;
@@ -555,9 +558,10 @@ grid-area: noticia1;
         justify-items: center;
         align-items: center;
         grid-template-areas:
-        "titulo titulo   "
-        "noticia1 noticia2   "
-        "noticia3 noticia3   "
+        "titulo "
+        "noticia1" 
+        "noticia2   "
+        "noticia3"
         ;
     }
     .notaimg{
