@@ -336,6 +336,19 @@ grid-area: noticia1;
         "banner banner"
     ;
     }
+    .anuncio-superior{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 15px;
+        width: 100vw;
+        text-align: center;
+        background-color: black;
+        color: aliceblue;
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: anuncio;
+    
+    }
     nav ul a{
         color:rgb(44, 44, 208);
         font-size: 15px;
@@ -440,6 +453,19 @@ grid-area: noticia1;
         "lista lista"
         "banner banner"
     ;
+    }
+    .anuncio-superior{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 10px;
+        width: 100vw;
+        text-align: center;
+        background-color: black;
+        color: aliceblue;
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: anuncio;
+    
     }
     .logo{
         width: 100px;
@@ -576,3 +602,43 @@ background-color: lightskyblue;
     flex-wrap: wrap;
 }
 
+/*html de nosotros*/
+.colormain{
+    background-color: rgba(206, 229, 229, 0.878);
+}
+
+.nosotros h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: brown;
+}
+.nosotros p{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    line-height: 40px;
+    color: rgba(3, 28, 42, 0.83);
+    margin-bottom: 25px;
+}
+.mapa{
+    display: flex;  
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+}
+.img-nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5px;
+}
