@@ -34,37 +34,41 @@
     </nav>
     </header>
     <main>
+        <h2 class="titulo-cuenta">tu cuenta</h2>
         <div class="cuenta">
-        <form action="" method="post" enctype="">
-            <fieldset>
-                <legend> ¿Ya tienes cuenta? Ingresa tus datos</legend>
-            <label for="alta">
-                <span> ¿como te llamas?</span>
-                <input type="text" id="alta" placeholder="escribe tu nombre">
-            </label>
-            <label for="email">
-                <span> ingresa tu correo electronico</span>
-                <input type="email"  id="email" placeholder="ingresa tu correo electronico">
-            </label>
-        
-            <label for="contraseña">
-            <span> ingresa tu contraseña</span>
-            <input type="password"  id="contraseña" placeholder="ingresa tu contraseña">
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend></legend>
-        </fieldset>
-        <div>
-        <input type="submit" id="" value="ingresar">
-        <input type="submit" id="" value="olvidé mi contraseña">
-    </div>
-        <div>
-            <p>¿Eres nuevo? unete a nuestro club AQUI</p>
-        </div>        
-    </form>
-            
-    </div>
+            <form action="" method="post" enctype="">
+                <fieldset>
+                    <legend>¿Ya tienes cuenta? Ingresa tus datos</legend>
+                    <label for="alta">
+                        <span> ¿Cómo te llamas?</span>
+                        <input class="escritura" type="text" id="alta" placeholder="escribe tu nombre" />
+                    </label>
+                    <label for="email">
+                        <span> Correo electrónico</span>
+                        <input class="escritura" type="email" id="email" placeholder="ingresa tu correo electronico" />
+                    </label>
+                    <label for="contraseña">
+                        <span> Contraseña</span>
+                        <input class="escritura" type="password" id="contraseña" placeholder="ingresa tu contraseña" />
+                    </label>
+                </fieldset>
+                <fieldset class="aceptar">
+                    <legend>
+                        Acepta los términos y condiciones
+                    </legend>
+                    <label for="acepto">ACEPTO</label>
+                    <input type="checkbox" id="acepto" name="acepto" value="1">
+                </fieldset>
+                <div>
+                    <input type="submit" id="" value="ingresar" />
+                    <input type="submit" id="" value="olvidé mi contraseña" />
+                </div>
+                <div>
+                    <p>¿Eres nuevo? unete a nuestro club AQUI</p>
+                </div>
+            </form>
+        </div>
+    </main>
     <footer class="pie-de-pagina"><!--pie de página-->
         <section class="redes-sociales">
             <h2>Suiguenos en nuestras redes</h2>
@@ -83,6 +87,5 @@
             </ul>
         </section>
         </footer>
-    </main>
 </body>
 </html>

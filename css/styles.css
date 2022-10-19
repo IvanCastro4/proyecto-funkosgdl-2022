@@ -512,7 +512,7 @@ grid-area: noticia1;
         "caja6"
         ".   "
         ;
-        gap: 5px;
+        gap: 10px;
     }
     .titulo{
         font-family: 'Ubuntu', sans-serif;
@@ -587,7 +587,6 @@ background-color: lightskyblue;
     color: blue;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
- 
     padding: 15px;
 }
 .definicion p{
@@ -645,4 +644,52 @@ background-color: lightskyblue;
     justify-content: center;
     align-content: center;
     padding-bottom: 5px;
+}
+/*formulario*/
+.titulo-cuenta {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: brown;
+    
+}
+.cuenta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    gap: 15px;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    color: rgb(25, 65, 141);
+    background-color: azure;
+}
+.cuenta form fieldset{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+}
+.cuenta ::placeholder{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 25px;
+    height: 35px;
+    width: 500px;
+
+}
+.escritura{
+    font-size: 25px;
+    height: 35px;
+    width: 500px;
+}
+.input{
+    width: fit-content;
+    height: fit-content;
 }
