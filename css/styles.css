@@ -491,7 +491,7 @@ grid-area: noticia1;
     }
     main{
         color: blue;
-        height: 100%;
+        
     }
     .grid-container-main{
         background-color: rgba(62, 174, 208, 0.756);
