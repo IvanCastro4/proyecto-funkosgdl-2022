@@ -489,13 +489,17 @@ grid-area: noticia1;
         height: 100px;
         width: 100vw;
     }
+    main{
+        color: blue;
+        height: 100%;
+    }
     .grid-container-main{
         background-color: rgba(62, 174, 208, 0.756);
         width: 100vw;
         height: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows:  50px repeat(3, 1fr) 15%;
+        grid-template-rows:  50px repeat(6, 1fr) 5%;
         /*justify-content: center;
         align-items: center;
         place-content: center center;*/
@@ -505,15 +509,19 @@ grid-area: noticia1;
     
         "titulo "
         "caja1" 
-        "caja2   "
-        "caja4"
-        "caja3" 
+        "caja2"
+        "caja3"
+        "caja4" 
         "caja5" 
         "caja6"
         ".   "
         ;
         gap: 10px;
     }
+    .card-imagen{
+        width: 70px;
+        height: 70px;
+    }    
     .titulo{
         font-family: 'Ubuntu', sans-serif;
         width: 100vw;
@@ -704,7 +712,7 @@ background-color: lightskyblue;
 main{
     background-color: rgba(97, 156, 158, 0.608);
     color: blue;
-    height: 100vh;
+font-size: 15px;
 
 }
 main fieldset{
