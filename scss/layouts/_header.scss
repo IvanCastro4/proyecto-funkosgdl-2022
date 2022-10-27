@@ -1,0 +1,30 @@
+header{
+    background-color: rgb(50, 139, 139);
+    display: flex;
+    h1{
+        background: lightblue;
+        font-size: 40px;
+        color: bisque;
+    }
+    h2{
+        font-size: 40px;
+        color: lightcoral;
+    }
+    nav{
+        background-color: azure;
+    }
+}
+.navBar{
+    display: flex;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+            &:hover{
+                color: lightpink;
+            }
+        }
+    }
+}
