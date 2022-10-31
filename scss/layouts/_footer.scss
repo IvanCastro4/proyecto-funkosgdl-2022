@@ -1,0 +1,45 @@
+.pie-de-pagina{
+    background-color: rgba(72, 111, 174, 0.841);
+    text-decoration: none;
+    list-style: none;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.redes{
+    font-weight: 700;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+.redes-sociales {
+ul{
+    justify-content: space-evenly; 
+    display: flex;
+    list-style: none;  
+}
+h2{
+    margin-bottom: 10px;
+}
+}
+.datos {
+h2{
+    display: flex;
+    font-size: 20px;
+    color:black;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+}

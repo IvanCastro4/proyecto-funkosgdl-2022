@@ -1,734 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;1,300&family=Ubuntu:wght@400;500&display=swap');
-/**elección de fuentes
-font-family: 'Source Sans Pro', sans-serif; ítulos
-font-family: 'Ubuntu', sans-serif; texto general
-*/
-*{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*barra de ofertas*/
-.anuncio-superior{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 20px;
-    width: 100vw;
-    text-align: center;
-    background-color: black;
-    color: aliceblue;
-    font-family: 'Ubuntu', sans-serif;
-    grid-area: anuncio;
+.anuncio-superior {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  font-family: 'Ubuntu', sans-serif;
+  grid-area: anuncio; }
 
-}
-/*clases header y banner*/
 nav ul {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    text-decoration: none;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  text-decoration: none;
+  list-style: none; }
 
-}
-nav ul li{
-    text-decoration: none;
-}
-nav li a:hover{
-    color: rgb(19, 151, 72);
-}
-/*.menu-principal{
-    display: flex;
-flex-wrap: wrap;
-width: 100vw;   
-}*/
-nav ul a{
-    color:rgb(44, 44, 208);
-    font-size: 30px;
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding: 20px;
-    display: block;
-}
-.logo{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-decoration: none;
-}
-.encabezado{
-    display: flex;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    list-style: none;
-    background-color: rgba(80, 168, 200, 0.601);
-    height: auto;
-    width: 100vw;
-    justify-content: space-between; 
-    align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    grid-area: lista;
-}
-/*.logo-inicio{
-    display: flex;
-    flex-wrap: wrap;
-}*/
-.banner{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100%;
-    grid-area: banner; 
-}
-.banner img{
+nav li {
+  text-decoration: none; }
+
+nav a {
+  color: #2c2cd0;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 20px;
+  display: block; }
+  nav a:hover {
+    color: #139748; }
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none; }
+
+.encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  list-style: none;
+  background-color: rgba(80, 168, 200, 0.601);
+  height: auto;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  grid-area: lista; }
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100%;
+  grid-area: banner; }
+  .banner img {
     height: 250px;
-    width: 100vw;
-}
-.grid-container-header{
-    width: 100vw;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 30px 80px 250px;
-    justify-items: center;
-    align-items: stretch;
-    grid-template-areas:
-    "anuncio anuncio"
-    "lista lista"
-    "banner banner"
-;
-}
+    width: 100vw; }
 
+.grid-container-header {
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 30px 80px 250px;
+  justify-items: center;
+  align-items: stretch;
+  grid-template-areas: "anuncio anuncio" "lista lista" "banner banner"; }
 
-.titulo{
-    font-family: 'Ubuntu', sans-serif;
-    width: 100vw;
-    height: 100%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 50px;
+.pie-de-pagina {
+  background-color: rgba(72, 111, 174, 0.841);
+  text-decoration: none;
+  list-style: none;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Source Sans Pro', sans-serif;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center; }
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    color: brown;
-    grid-area: titulo  ;
-}
+.redes {
+  font-weight: 700;
+  font-size: 15px;
+  justify-content: space-evenly; }
 
-/*clases del main*/
-.contenido-main{
-    background-color: aquamarine;
-    display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 100vh;
-/* width: 100vw;*/
-    justify-content: space-evenly;
-    align-items: flex-start;
-    
-}
-.box{
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    text-align: center;
-    padding: 10px;
-    
-}
-.sombra{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 6px;
-}
-.sombra:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
-}
+.redes-sociales ul {
+  justify-content: space-evenly;
+  display: flex;
+  list-style: none; }
 
+.redes-sociales h2 {
+  margin-bottom: 10px; }
 
-.box1{
-    
-background-color: rgba(0, 255, 255, 0.484);
-grid-area: caja1
+.datos h2 {
+  display: flex;
+  font-size: 20px;
+  color: black;
+  flex-direction: row;
+  margin-bottom: 5px; }
 
-}
-.box2{
-    
-background-color: rgba(255, 0, 0, 0.445);
-grid-area: caja2;
-}
-.box3{
-    
-background-color: rgba(0, 0, 255, 0.359);
-grid-area: caja3;
-}
-.box4{
-    
-background-color: rgba(0, 128, 0, 0.336);
-grid-area: caja4;
-}
-.box5{
-    
-background-color: rgba(238, 130, 238, 0.337);
-grid-area: caja5;
-}
-.box6{
-    
-background-color: rgba(255, 255, 0, 0.327);
-grid-area: caja6;
-}
-.box7{
-background-color: rgba(128, 128, 128, 0.384);
-}
-.box8{
-    background-color: rgba(127, 255, 212, 0.716);
-}
-.card-imagen{
-    width: 100px;
-    height: 100px;
-    
-
-    transition: transform .2s; 
-}
-
-.card-imagen:hover {
-    transform: scale(1.7);
-
-}
-
-.contenido{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    padding: 2px 16px;
-}
-/*grillas para el main*/
-.grid-container-main{
-    background-color: rgba(97, 156, 158, 0.608);
-    width: 100vw;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px 150px 450px 50px;
-    /*justify-content: center;
-    align-items: center;
-    place-content: center center;*/
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-    ". . . . . . "
-    "titulo titulo titulo titulo titulo titulo  "
-    "caja1 caja2 caja3 caja4 caja5 caja6  "
-    ". . . . . . "
-     ;
-}
-
-
-
-/*clases para el aside*/
-.noticias{
-    background-color: lightcyan;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-.notaimg{
-    
-    width: 200px;
-    height: 200px;
-    
-}
-.nota1{
-    text-align: center;
-grid-area: noticia1;
-}
-.nota2{
-    text-align: center;
-    grid-area: noticia2;
-}
-.nota3{
-    text-align: center;
-    grid-area: noticia3;
-}
-.grid-container-aside{
-    background-color: lightcyan;
-    width: 100vw;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 18px 70px 400px 30px;
-    /*justify-content: center;
-    align-items: center;
-    place-content: center center;*/
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-    ". . .  "
-    "titulo titulo titulo  "
-    "noticia1 noticia2 noticia3  "
-    ". . .  "
-     ;
-}
-/*clases para footer*/
-.pie-de-pagina{
-    background-color: rgba(72, 111, 174, 0.841);
-    text-decoration: none;
-    list-style: none;
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Source Sans Pro', sans-serif;
-    align-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    /*font-family: 'Source Sans Pro', sans-serif;*/
-}
-.redes{
-    font-weight: 700;
-    font-size: 15px;
-    justify-content: space-evenly;
-}
-.redes-sociales ul{
-    justify-content: space-evenly; 
-    display: flex;
-    list-style: none;  
-}
-.redes-sociales h2{
-    margin-bottom: 10px;
-}
-.datos h2{
-    display: flex;
-    font-size: 20px;
-    flex-direction: row;
-    margin-bottom: 5px;
-}
-.datos ul li{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-decoration: none;
-    font-size: 15px;
-
-}
-/*cambios para pantalla tablet*/
-@media (max-width: 768px){
-    .grid-container-header{
-        width: 100vw;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 30px 80px 150px;
-        justify-items: center;
-        align-items: stretch;
-        grid-template-areas:
-        "anuncio anuncio"
-        "lista lista"
-        "banner banner"
-    ;
-    }
-    .anuncio-superior{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        font-size: 15px;
-        width: 100vw;
-        text-align: center;
-        background-color: black;
-        color: aliceblue;
-        font-family: 'Ubuntu', sans-serif;
-        grid-area: anuncio;
-    
-    }
-    nav ul a{
-        color:rgb(44, 44, 208);
-        font-size: 15px;
-        text-decoration: none;
-        font-family: 'Source Sans Pro', sans-serif;
-        padding: 20px;
-        display: block;
-    }
-    .banner img{
-        height: 150px;
-        width: 100vw;
-    }
-    .grid-container-main{
-        background-color: rgb(129, 183, 248);
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows:  100px repeat(2, 1fr) 15%;
-        /*justify-content: center;
-        align-items: center;
-        place-content: center center;*/
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-    
-        "titulo titulo titulo "
-        "caja1 caja2 caja3  "
-        "caja4 caja5 caja6 "
-        ". . .  "
-        ;
-    }
-    .titulo{
-        font-family: 'Ubuntu', sans-serif;
-        width: 100vw;
-        height: 100%;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 30px;
-    
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        color: rgb(0, 252, 38);
-        grid-area: titulo  ;
-    }
-    .pie-de-pagina{
-        background-color: rgba(156, 53, 137, 0.841);
-        text-decoration: none;
-        list-style: none;
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        font-family: 'Source Sans Pro', sans-serif;
-        align-content: space-evenly;
-        flex-wrap: wrap;
-        align-items: center;
-        /*font-family: 'Source Sans Pro', sans-serif;*/
-    }
-    .grid-container-aside{
-        background-color: rgb(21, 165, 165);
-        width: 100vw;
-        height: 70vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 25% repeat(2, 1fr);
-        /*justify-content: center;
-        align-items: center;
-        place-content: center center;*/
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-        "titulo titulo   "
-        "noticia1 noticia2   "
-        "noticia3 .   "
-         ;
-    }
-    .notaimg{
-    
-        width: 150px;
-        height: 120px;
-        
-    }
-   
-}
-/*cambios para pantalla mobile*/
-@media (max-width: 576px){
-    .grid-container-header{
-        width: 100vw;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 20px 50px 100px;
-        justify-items: center;
-        align-items: stretch;
-        grid-template-areas:
-        "anuncio"
-        "lista"
-        "banner"
-    ;
-    }
-    .anuncio-superior{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        font-size: 10px;
-        width: 100vw;
-        text-align: center;
-        background-color: black;
-        color: aliceblue;
-        font-family: 'Ubuntu', sans-serif;
-        grid-area: anuncio;
-    
-    }
-    .logo{
-        width: 100px;
-        height: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-decoration: none;
-        font-size: 10px;
-    }
-    
-    nav ul a{
-        color:rgb(44, 44, 208);
-        font-size: 10px;
-        text-decoration: none;
-        font-family: 'Source Sans Pro', sans-serif;
-        padding: 20px;
-        display: block;
-    }
-    .banner img{
-        height: 100px;
-        width: 100vw;
-    }
-    main{
-        color: blue;
-        
-    }
-    .grid-container-main{
-        background-color: rgba(62, 174, 208, 0.756);
-        width: 100vw;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows:  50px repeat(6, 1fr) 5%;
-        /*justify-content: center;
-        align-items: center;
-        place-content: center center;*/
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-    
-        "titulo "
-        "caja1" 
-        "caja2"
-        "caja3"
-        "caja4" 
-        "caja5" 
-        "caja6"
-        ".   "
-        ;
-        gap: 10px;
-    }
-    .card-imagen{
-        width: 70px;
-        height: 70px;
-    }    
-    .titulo{
-        font-family: 'Ubuntu', sans-serif;
-        width: 100vw;
-        height: 100%;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: 23px;
-    
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        color: rgb(67, 14, 74);
-        grid-area: titulo  ;
-    }
-    .pie-de-pagina{
-        background-color: rgba(191, 119, 179, 0.841);
-        text-decoration: none;
-        list-style: none;
-        width: 100vw;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        font-family: 'Source Sans Pro', sans-serif;
-        align-content: space-evenly;
-        flex-wrap: wrap;
-        align-items: center;
-        /*font-family: 'Source Sans Pro', sans-serif;*/
-    }
-    .grid-container-aside{
-        background-color: rgb(64, 131, 131);
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 10% repeat(2, 1fr);
-        /*justify-content: center;
-        align-items: center;
-        place-content: center center;*/
-        justify-items: center;
-        align-items: center;
-        grid-template-areas:
-        "titulo "
-        "noticia1" 
-        "noticia2   "
-        "noticia3"
-        ;
-    }
-    .notaimg{
-    
-        width: 150px;
-        height: 120px;
-        
-    }
-
-}
-.img-que-es{
-    width: 25%;/*en chrome me lo tira para abajo si le doy más, en firefox me deja un espacio ligero*/
-    height: 250px;  
-    /*position: relative;*/
-}
-.definicion{
-height: 100vh;
-background-color: lightskyblue;
-
-}
-.definicion h2{
-    font-size: 50px;
-    color: blue;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    padding: 15px;
-}
-.definicion p{
-    font-family: 'Ubuntu', sans-serif;
-    text-align: justify;
-    font-size: 25px;
-    font-weight: 800;
-    line-height: 40px;
-    color: rgba(3, 28, 42, 0.83);
-    width: 100%;
-    height: 100%;
-}
-
-.funko-fotos{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/*html de nosotros*/
-.colormain{
-    background-color: rgba(206, 229, 229, 0.878);
-}
-
-.nosotros h2{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 50px;
-    text-align: center;
-    color: brown;
-}
-.nosotros p{
-    margin-top: 25px;
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 800;
-    line-height: 40px;
-    color: rgba(3, 28, 42, 0.83);
-    margin-bottom: 25px;
-}
-.mapa{
-    display: flex;  
-    justify-content: center;
-    width: 500px;
-    height: 300px;
-}
-.img-nosotros{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.ubicacion{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 5px;
-}
-/*formulario*/
-.titulo-cuenta {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Ubuntu', sans-serif;
-    width: 100vw;
-    height: 100%;
-    text-align: center;
-    font-size: 50px;
-    color: brown;
-    
-}
-.cuenta{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100vh;
-    gap: 15px;
-    align-items: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 35px;
-    color: rgb(25, 65, 141);
-    background-color: azure;
-}
-.cuenta form fieldset{
-    display: flex;
-    flex-direction: column;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 35px;
-}
-.cuenta ::placeholder{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-size: 25px;
-    height: 35px;
-    width: 500px;
-
-}
-.escritura{
-    font-size: 25px;
-    height: 35px;
-    width: 500px;
-}
-.input{
-    width: fit-content;
-    height: fit-content;
-}
-/*clases bootstrap*/
-.navBar li{
-    list-style: none;
-}
-.navBar li a{
-    color: rgb(11, 82, 225);
-    text-decoration: none;
-}
-main{
-    background-color: rgba(97, 156, 158, 0.608);
-    color: blue;
-font-size: 15px;
-
-}
-main fieldset{
-    width: 80%;
-    padding: 25px;
-}
-.mover{
-    margin-left: 45vw;
-
-}
-nav{
-background-color: rgba(80, 168, 200, 0.601);
-
-}
-.nav-item{
-color: blue;
-font-size: 20px;
-
-}
+.datos li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px; }

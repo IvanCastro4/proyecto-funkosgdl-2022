@@ -1,30 +1,81 @@
-header{
-    background-color: rgb(50, 139, 139);
+.anuncio-superior{
     display: flex;
-    h1{
-        background: lightblue;
-        font-size: 40px;
-        color: bisque;
-    }
-    h2{
-        font-size: 40px;
-        color: lightcoral;
-    }
-    nav{
-        background-color: azure;
-    }
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    width: 100vw;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: anuncio;
 }
-.navBar{
+nav{
+     ul {
     display: flex;
-    li{
-        list-style: none;
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: 30px;
-            &:hover{
-                color: lightpink;
-            }
-        }
-    }
+    flex-direction: row;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+
+}
+li{
+    text-decoration: none;
+}
+
+a{
+    color:rgb(44, 44, 208);
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px;
+    display: block;
+&:hover{
+    color: rgb(19, 151, 72);
+}
+}
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+}
+.encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    list-style: none;
+    background-color:$color_header;
+    height: auto;
+    width: 100vw;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    grid-area: lista;
+}
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100%;
+    grid-area: banner; 
+ img{
+    height: 250px;
+    width: 100vw;
+}
+}
+.grid-container-header{
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px 80px 250px;
+    justify-items: center;
+    align-items: stretch;
+    grid-template-areas:
+    "anuncio anuncio"
+    "lista lista"
+    "banner banner";
 }
