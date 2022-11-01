@@ -1,0 +1,145 @@
+/*cambios para pantalla tablet*/
+@media (max-width: 768px){
+    .grid-container-header{
+        width: 100vw;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 30px 80px 150px;
+        justify-items: center;
+        align-items: stretch;
+        grid-template-areas:
+        "anuncio anuncio"
+        "lista lista"
+        "banner banner"
+    ;
+    }
+    .anuncio-superior{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 15px;
+        width: 100vw;
+        text-align: center;
+        background-color: black;
+        color: aliceblue;
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: anuncio;
+    }
+    nav {
+    a{
+        color:rgb(44, 44, 208);
+        font-size: 15px;
+        text-decoration: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 20px;
+        display: block;
+    }
+}
+    .banner img{
+        height: 150px;
+        width: 100vw;
+    }
+    .grid-container-main{
+        background-color: $color_main_tablet;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:  100px repeat(2, 1fr) 15%;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "titulo titulo titulo "
+        "caja1 caja2 caja3  "
+        "caja4 caja5 caja6 "
+        ". . .  ";
+    }
+    .titulo{
+        font-family: 'Ubuntu', sans-serif;
+        width: 100vw;
+        height: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        color: $color_aside_tablet;
+        grid-area: titulo  ;
+    }
+    .pie-de-pagina{
+        background-color: $color_footer_tablet;
+        text-decoration: none;
+        list-style: none;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Source Sans Pro', sans-serif;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .grid-container-aside{
+        background-color: rgb(21, 165, 165);
+        width: 100vw;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 25% repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+        "titulo titulo   "
+        "noticia1 noticia2   "
+        "noticia3 noticia3   " ;
+    }
+    h3{
+        color:$color_titulo_aside;
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+        color: $color_texto_notas;
+    }
+    .notaimg{
+        width: 150px;
+        height: 120px;
+    }
+}
+/*que-es*/
+.img-que-es{
+    width: 25%;/*en chrome me lo tira para abajo si le doy más, en firefox me deja un espacio ligero*/
+    height: 150px;  
+}
+.definicion{
+    height: 75vh;
+width: 100vw;
+background-color: $color_main_tablet;
+h2{
+    font-size: 35px;
+    color:$color_texto_titulos;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px;
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 40px;
+    color: rgba(3, 28, 42, 0.83);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+}
+.funko-fotos{
+    display: flex;
+    flex-wrap: wrap;
+}

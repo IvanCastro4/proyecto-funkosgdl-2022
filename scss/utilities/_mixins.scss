@@ -1,0 +1,6 @@
+@mixin prop-footer($justify,$aligncont,$alignitm) {
+    display: flex;
+    justify-content: $justify;
+    align-content: $aligncont;
+    align-items: $alignitm;
+}
