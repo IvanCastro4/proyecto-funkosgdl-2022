@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -74,6 +75,201 @@ nav a {
   justify-items: center;
   align-items: stretch;
   grid-template-areas: "anuncio anuncio" "lista lista" "banner banner"; }
+
+.grid-container-main {
+  background-color: rgba(97, 156, 158, 0.608);
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 50px 150px 450px 50px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: ". . . . . . " "titulo titulo titulo titulo titulo titulo  " "caja1 caja2 caja3 caja4 caja5 caja6  " ". . . . . . "; }
+
+.titulo {
+  font-family: 'Ubuntu', sans-serif;
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  color: brown;
+  grid-area: titulo; }
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 10px; }
+
+.sombra {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 6px; }
+  .sombra:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4); }
+
+.box1 {
+  background-color: rgba(0, 255, 255, 0.484);
+  grid-area: caja1; }
+
+.box2 {
+  background-color: rgba(255, 0, 0, 0.445);
+  grid-area: caja2; }
+
+.box3 {
+  background-color: rgba(0, 0, 255, 0.359);
+  grid-area: caja3; }
+
+.box4 {
+  background-color: rgba(0, 128, 0, 0.336);
+  grid-area: caja4; }
+
+.box5 {
+  background-color: rgba(238, 130, 238, 0.337);
+  grid-area: caja5; }
+
+.box6 {
+  background-color: rgba(255, 255, 0, 0.327);
+  grid-area: caja6; }
+
+.box7 {
+  background-color: rgba(128, 128, 128, 0.384); }
+
+.box8 {
+  background-color: rgba(127, 255, 212, 0.716); }
+
+.card-imagen {
+  width: 100px;
+  height: 100px;
+  transition: transform .2s; }
+  .card-imagen:hover {
+    transform: scale(1.7); }
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2px 16px; }
+
+/*aside*/
+.noticias {
+  background-color: lightcyan;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+
+.notaimg {
+  width: 200px;
+  height: 200px; }
+
+.nota1 {
+  text-align: center;
+  grid-area: noticia1; }
+
+.nota2 {
+  text-align: center;
+  grid-area: noticia2; }
+
+.nota3 {
+  text-align: center;
+  grid-area: noticia3; }
+
+.grid-container-aside {
+  background-color: lightcyan;
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 18px 70px 400px 30px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: ". . .  " "titulo titulo titulo  " "noticia1 noticia2 noticia3  " ". . .  "; }
+  .grid-container-aside h3 {
+    color: blue;
+    font-size: 35px; }
+  .grid-container-aside p {
+    font-size: 25px;
+    color: rgba(31, 71, 100, 0.692); }
+
+.img-que-es {
+  width: 25%;
+  /*en chrome me lo tira para abajo si le doy más, en firefox me deja un espacio ligero*/
+  height: 250px; }
+
+.definicion {
+  width: 100vw;
+  background-color: rgba(97, 156, 158, 0.608); }
+  .definicion h2 {
+    font-size: 50px;
+    color: brown;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px; }
+  .definicion p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 40px;
+    color: rgba(3, 28, 42, 0.83);
+    width: 100%;
+    height: 100%;
+    padding: 10px; }
+
+.funko-fotos {
+  display: flex;
+  flex-wrap: wrap; }
+
+.colormain {
+  background-color: rgba(206, 229, 229, 0.878); }
+
+.nosotros h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: brown; }
+
+.nosotros p {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 800;
+  line-height: 40px;
+  color: rgba(3, 28, 42, 0.83);
+  margin-bottom: 25px; }
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 300px; }
+
+.img-nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.ubicacion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 5px; }
 
 .pie-de-pagina {
   background-color: rgba(72, 111, 174, 0.841);

@@ -1,0 +1,31 @@
+.img-que-es{
+    width: 25%;/*en chrome me lo tira para abajo si le doy más, en firefox me deja un espacio ligero*/
+    height: 250px;  
+}
+.definicion{
+
+width: 100vw;
+background-color: $color_main;
+h2{
+    font-size: 50px;
+    color:$color_texto_titulos;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px;
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 40px;
+    color: rgba(3, 28, 42, 0.83);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+}
+.funko-fotos{
+    display: flex;
+    flex-wrap: wrap;
+}

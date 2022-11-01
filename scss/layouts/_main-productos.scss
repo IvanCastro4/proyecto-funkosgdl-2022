@@ -77,12 +77,6 @@ grid-area: caja5;
 background-color: rgba(255, 255, 0, 0.327);
 grid-area: caja6;
 }
-.box7{
-background-color: rgba(128, 128, 128, 0.384);
-}
-.box8{
-    background-color: rgba(127, 255, 212, 0.716);
-}
 .card-imagen{
     width: 100px;
     height: 100px;
@@ -97,55 +91,4 @@ background-color: rgba(128, 128, 128, 0.384);
     flex-direction: column;
     text-align: center;
     padding: 2px 16px;
-}
-/*aside*/
-.noticias{
-    background-color: lightcyan;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: space-evenly;
-    align-items: flex-start;
-}
-.notaimg{  
-    width: 200px;
-    height: 200px;  
-}
-.nota1{
-    text-align: center;
-grid-area: noticia1;
-}
-.nota2{
-    text-align: center;
-    grid-area: noticia2;
-}
-.nota3{
-    text-align: center;
-    grid-area: noticia3;
-}
-.grid-container-aside{
-    background-color:$color_aside;
-    width: 100vw;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 18px 70px 400px 30px;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-    ". . .  "
-    "titulo titulo titulo  "
-    "noticia1 noticia2 noticia3  "
-    ". . .  ";
-    h3{
-        color:$color_titulo_aside;
-        font-size: 35px;
-    }
-    p{
-        font-size: 25px;
-        color: $color_texto_notas;
-    }
-        
-    
 }
