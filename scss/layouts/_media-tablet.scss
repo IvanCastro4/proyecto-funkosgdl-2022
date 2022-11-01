@@ -110,7 +110,7 @@
         width: 150px;
         height: 120px;
     }
-}
+
 /*que-es*/
 .img-que-es{
     width: 25%;/*en chrome me lo tira para abajo si le doy más, en firefox me deja un espacio ligero*/
@@ -142,4 +142,48 @@ p{
 .funko-fotos{
     display: flex;
     flex-wrap: wrap;
+}
+/*nosotros*/
+.colormain{
+    background-color: $color_main_tablet;
+}
+
+.nosotros {
+    h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: $color_texto_titulos;
+}
+    p{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 800;
+    line-height: 40px;
+    color: rgba(3, 28, 42, 0.83);
+    margin-bottom: 15px;
+}
+}
+
+.mapa{
+    display: flex;  
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+}
+.img-nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5px;
+}
 }
