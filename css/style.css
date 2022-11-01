@@ -271,6 +271,35 @@ nav a {
   align-content: center;
   padding-bottom: 5px; }
 
+.formulario {
+  height: 100vh; }
+
+.navBar li {
+  list-style: none; }
+
+.navBar a {
+  color: #0b52e1;
+  text-decoration: none; }
+
+main {
+  background-color: rgba(97, 156, 158, 0.608);
+  color: blue;
+  font-size: 15px; }
+
+main fieldset {
+  width: 80%;
+  padding: 25px; }
+
+.mover {
+  margin-left: 45vw; }
+
+nav {
+  background-color: rgba(80, 168, 200, 0.601); }
+
+.nav-item {
+  color: blue;
+  font-size: 20px; }
+
 .pie-de-pagina {
   background-color: rgba(72, 111, 174, 0.841);
   text-decoration: none;
