@@ -1,15 +1,7 @@
 .formulario{
     height: 100vh;
 }
-.navBar {
-    li{
-    list-style: none;
-}
-a{
-    color: rgb(11, 82, 225);
-    text-decoration: none;
-}
-}
+
 main{
     background-color: $color_main;
     color: blue;
@@ -28,7 +20,13 @@ nav{
 background-color: rgba(80, 168, 200, 0.601);
 }
 .nav-item{
-color: blue;
-font-size: 20px;
-
+    a{
+    color:rgb(44, 44, 208);
+        font-size: 30px;
+        font-family: 'Source Sans Pro', sans-serif;
+    &:hover{
+        color: rgb(19, 151, 72);
+    }
 }
+    }
+    

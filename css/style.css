@@ -17,24 +17,14 @@
   font-family: 'Ubuntu', sans-serif;
   grid-area: anuncio; }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-  text-decoration: none;
-  list-style: none; }
-
-nav li {
-  text-decoration: none; }
-
-nav a {
+header a {
   color: #2c2cd0;
   font-size: 30px;
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
   padding: 20px;
   display: block; }
-  nav a:hover {
+  header a:hover {
     color: #139748; }
 
 .logo {
@@ -98,7 +88,7 @@ nav a {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 50px;
+  font-size: 70px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -278,13 +268,6 @@ nav a {
 .formulario {
   height: 100vh; }
 
-.navBar li {
-  list-style: none; }
-
-.navBar a {
-  color: #0b52e1;
-  text-decoration: none; }
-
 main {
   background-color: rgba(97, 156, 158, 0.608);
   color: blue;
@@ -300,9 +283,12 @@ main fieldset {
 nav {
   background-color: rgba(80, 168, 200, 0.601); }
 
-.nav-item {
-  color: blue;
-  font-size: 20px; }
+.nav-item a {
+  color: #2c2cd0;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif; }
+  .nav-item a:hover {
+    color: #139748; }
 
 .pie-de-pagina {
   background-color: rgba(72, 111, 174, 0.841);

@@ -8,20 +8,9 @@
     background-color: black;
     color: aliceblue;
     font-family: 'Ubuntu', sans-serif;
-    grid-area: anuncio;
-}
-nav{
-    ul {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    text-decoration: none;
-    list-style: none;
-}
-li{
-    text-decoration: none;
-}
+    grid-area: anuncio;}
 
+header{
 a{
     color:rgb(44, 44, 208);
     font-size: 30px;
@@ -34,6 +23,7 @@ a{
 }
 }
 }
+
 .logo{
     display: flex;
     flex-wrap: wrap;
