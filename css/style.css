@@ -412,9 +412,9 @@ nav {
     grid-template-areas: "titulo titulo   " "noticia1 noticia2   " "noticia3 noticia3   "; }
   h3 {
     color: blue;
-    font-size: 25px; }
+    font-size: 30px; }
   p {
-    font-size: 15px;
+    font-size: 20px;
     color: rgba(31, 71, 100, 0.692); }
   .notaimg {
     width: 150px;
@@ -558,10 +558,16 @@ nav {
     height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% repeat(2, 1fr);
+    grid-template-rows: 5% repeat(3, 1fr);
     justify-items: center;
     align-items: center;
     grid-template-areas: "titulo " "noticia1"  "noticia2   " "noticia3"; }
+    .grid-container-aside h3 {
+      color: blue;
+      font-size: 25px; }
+    .grid-container-aside p {
+      font-size: 15px;
+      color: rgba(31, 71, 100, 0.692); }
   .notaimg {
     width: 150px;
     height: 120px; }
