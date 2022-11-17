@@ -449,7 +449,8 @@ nav {
     flex-wrap: wrap; }
   /*nosotros*/
   .colormain {
-    background-color: #81b7f8; }
+    background-color: #81b7f8;
+    height: 100vh; }
   .nosotros h2 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 35px;
