@@ -602,8 +602,8 @@ nav {
     .definicion p {
       font-family: 'Ubuntu', sans-serif;
       text-align: justify;
-      font-size: 15px;
-      font-weight: 800;
+      font-size: 12px;
+      font-weight: 600;
       line-height: 40px;
       color: rgba(3, 28, 42, 0.83);
       width: 100%;
